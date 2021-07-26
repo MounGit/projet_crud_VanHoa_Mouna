@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PortfolioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,3 +19,6 @@ Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
+Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
+
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
