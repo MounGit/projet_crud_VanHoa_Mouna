@@ -30,12 +30,12 @@
     <!-- Stylesheets
     ================================================== -->
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
-    <link href="assets/css/colors.css" rel="stylesheet">
+    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/responsive.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/colors.css')}}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -54,13 +54,13 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.slicknav.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/touchswipe.min.js"></script>
-    <script src="assets/js/skrollr.min.js"></script>
-    <script src="assets/js/jquery.countTo.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('assets/js/jquery.slicknav.min.js')}}"></script>
+    <script src="{{asset('assets/js/slick.min.js')}}"></script>
+    <script src="{{asset('assets/js/touchswipe.min.js')}}"></script>
+    <script src="{{asset('assets/js/skrollr.min.js')}}"></script>
+    <script src="{{asset('assets/js/jquery.countTo.min.js')}}"></script>
+    <script src="{{asset('assets/js/script.js')}}"></script>
 
 </body>
 </html>
