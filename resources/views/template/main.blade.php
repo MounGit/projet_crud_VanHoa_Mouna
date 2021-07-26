@@ -43,11 +43,12 @@
     <![endif]-->
 </head>
 <body>
+    
+
+
     @include('partials/nav')
-
-
     @yield('content')
-
+    @include('partials/footer')
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

@@ -15,15 +15,15 @@
                 <div class="main-menu" id="perfect-navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li >
-                            <a href="index.html">Home</a></li>
+                            <a href="{{route('home')}}">Home</a></li>
                         <li class="active">
-                            <a href="blog.html">Blog </a>
+                            <a href="{{route('blog')}}">Blog </a>
                         </li>
                         <li>
-                            <a href="portfolio.html">Portfolio</a>                                
+                            <a href="{{route('portfolio')}}">Portfolio</a>                                
                         </li>
                         <li>
-                            <a href="contact.html">Contact</a>
+                            <a href="{{route('contact')}}">Contact</a>
                         </li> 
                     </ul><!-- /.navbar-nav -->
                 </div><!-- /.navbar-collapse -->
