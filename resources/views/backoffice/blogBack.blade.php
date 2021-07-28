@@ -7,13 +7,14 @@
         <button class="btn btn-warning" onclick="window.location.href = '/admin/backoffice/blog/create'">Ajouter un article</button>
 
     </div>
+    <h2 style="align-self:center">Articles présents sur le site</h2>
     <div class="portForeach">
         @foreach ($dataBlog as $item)
         <div class="card " style="width: 25rem; margin: 3rem">
             <h3>Article : {{$item->id}}</h3>
             <img src="/{{$item->image}}" class="card-img-top" style="width: 25rem;" alt="...">
             <div class="card-body">
-                <h5 class="card-title">{{$item->titre}}</h5>
+                <h4 class="card-title"> {{$item->titre}}</h4>
                 <p class="card-text">{{$item->description}}</p>
                 <form action="{{route('deleteBlog', $item->id)}}" method="post">
                     @csrf
