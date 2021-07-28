@@ -2037,3 +2037,110 @@ a.post-title:hover,
   color: #ffd500;
   text-decoration: underline;
 }
+
+/* back */
+
+
+.back-home{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px;
+  
+}
+.back-home h1{
+  text-align: center;
+  font-size: 64px;
+  margin:0 0 60px 0;
+  font-weight: 700;
+}
+.back-home div{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.back-home div div{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border: solid 1px #292a2c;
+  padding: 70px;
+  border-radius: 5px;
+}
+.back-home div button{
+  width: 70px;
+  height:45px;
+  background-color: #ffd500;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.back-port{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px;
+  
+}
+.back-port .divBtn button{
+  background-color:  #ffd500 ;
+  border-radius: 10px;
+}
+.back-port h1{
+  text-align: center;
+  font-size: 64px;
+  margin:0 0 60px 0;
+  font-weight: 700;
+}
+
+
+.back-port-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px;
+}
+
+
+.back-port-form h1{
+  text-align: center;
+  font-size: 64px;
+  margin:0 0 60px 0;
+  font-weight: 700;
+}
+.back-port-form form{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 400px;
+}
+.back-port-form form button{
+  margin-top: 10px;
+  width: 110px;
+  height: 40px;
+  background-color: #ffd500;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.back-port .portForeach{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.back-port .portForeach button{
+  background-color: tomato !important;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+}

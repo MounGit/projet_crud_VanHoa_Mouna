@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\BlogBackController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeBackController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PortfolioBackController;
 use App\Http\Controllers\PortfolioController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,3 +27,23 @@ Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+
+Route::get('/admin/backoffice/home', [HomeBackController::class, 'index'])->name('backH');
+
+Route::get('/admin/backoffice/portfolio', [PortfolioBackController::class, 'index'])->name('backP');
+
+Route::get('/admin/backoffice/portfolio/create', [PortfolioBackController::class, 'create'])->name('backPC');
+
+Route::post('/portfolio/change', [PortfolioBackController::class, 'store']);
+
+Route::post('/portfolio/{id}/delete', [PortfolioBackController::class, 'destroy'])->name('delete');
+
+Route::get('/admin/backoffice/blog', [BlogBackController::class, 'index'])->name('backB');
+
+Route::get('/admin/backoffice/blog/create',[BlogBackController::class,'create'])->name('backblogcreate');
+
+Route::post('/blog/{id}/delete',[BlogBackController::class,'destroy'])->name('deleteBlog');
+
+Route::post('/blog/change',[BlogBackController::class,'store']);
+
+

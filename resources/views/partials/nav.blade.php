@@ -25,6 +25,9 @@
                         <li>
                             <a href="{{route('contact')}}">Contact</a>
                         </li> 
+                        <li>
+                            <a href="{{route('backH')}}">BackOffice</a>
+                        </li> 
                     </ul><!-- /.navbar-nav -->
                 </div><!-- /.navbar-collapse -->
                 
