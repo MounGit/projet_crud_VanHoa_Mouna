@@ -10,16 +10,21 @@
     <h2 style="align-self:center">Projets présents sur le site</h2>
     <div class="portForeach">
         @foreach ($dataPort as $item)
-        <div class="card " style="width: 20rem; margin: 3rem">
+        <div class="card " style="width: 25rem; margin: 3rem">
             <h3>Projet : {{$item->id}}</h3>
-            <img src="/{{$item->image}}" class="card-img-top" style="width: 20rem;" alt="...">
+            <img src="/{{$item->image}}" class="card-img-top" style="width: 25rem;" alt="...">
             <div class="card-body">
                 <h4 class="card-title">{{$item->titre}}</h4>
                 <p class="card-text">{{$item->description}}</p>
-                <form action="{{route('delete', $item->id)}}" method="post">
-                    @csrf
-                    <button class="btn btn-warning" type="submit">Supprimer</button>
-                </form>
+                <div>
+                    <a href="{{route('show', $item->id)}}" class="btn btn-warning">SHOW</a>
+                    <form action="{{route('delete', $item->id)}}" method="post">
+                        @csrf
+                        <button class="btn btn-warning" type="submit">DELETE</button>
+                    </form>
+                    
+                </div>
+
             </div>
         </div>
         @endforeach

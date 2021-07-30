@@ -2138,8 +2138,18 @@ a.post-title:hover,
   justify-content: center;
 }
 
+.back-port .portForeach div .div-btn{
+  display: flex;
+  justify-content: space-around;
+}
 .back-port .portForeach button{
   background-color: tomato !important;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+}
+.back-port .portForeach a{
+  background-color: #ffd500;
   border-radius: 10px;
   border: none;
   margin-top: 10px;

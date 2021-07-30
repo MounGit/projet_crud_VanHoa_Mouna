@@ -25,6 +25,22 @@ class PortfolioBackController extends Controller
     public function destroy($id){
         $dataDelete = Projet::find($id);
         $dataDelete->delete();
-        return redirect()->back();
+        return redirect()->route('backP');
+    }
+    public function show (Projet $id){
+        $projet = $id;
+        return view('backoffice.showPortfolio', compact('projet'));
+    }
+    public function edit(Projet $id){
+        $projet = $id;
+        return view('backoffice.editPortfolio', compact('projet'));
+    }
+    public function update(Projet $id, Request $request){
+        $projet = $id;
+        $projet->image = $request->image;
+        $projet->titre = $request->titre;
+        $projet->description = $request->description;
+        $projet->save();
+        return redirect()->route('backP');
     }
 }

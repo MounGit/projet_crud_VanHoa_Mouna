@@ -28,7 +28,11 @@ Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 
+//BACK OFFICE 
+
 Route::get('/admin/backoffice/home', [HomeBackController::class, 'index'])->name('backH');
+
+//BACK OFFICE PORTFOLIO
 
 Route::get('/admin/backoffice/portfolio', [PortfolioBackController::class, 'index'])->name('backP');
 
@@ -37,6 +41,14 @@ Route::get('/admin/backoffice/portfolio/create', [PortfolioBackController::class
 Route::post('/portfolio/change', [PortfolioBackController::class, 'store']);
 
 Route::post('/portfolio/{id}/delete', [PortfolioBackController::class, 'destroy'])->name('delete');
+
+Route::get('/portfolio/{id}/show', [PortfolioBackController::class, 'show'])->name('show');
+
+Route::get('/portfolio/{id}/edit', [PortfolioBackController::class, 'edit'])->name('edit');
+
+Route::put('/portfolio/{id}/update', [PortfolioBackController::class, 'update'])->name('update');
+
+//BACK OFFICE BLOG
 
 Route::get('/admin/backoffice/blog', [BlogBackController::class, 'index'])->name('backB');
 
