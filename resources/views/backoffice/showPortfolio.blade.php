@@ -7,7 +7,7 @@
 
         <div class="card " style="width: 40rem; margin: 3rem">
             <h3>Projet : {{$projet->id}}</h3>
-            <img src="/{{$projet->image}}" class="card-img-top" style="width: 40rem;" alt="...">
+            <img src="{{asset('assets/img/'.$projet->image)}}" class="card-img-top" style="width: 40rem;" alt="...">
             <div class="card-body">
                 <h4 class="card-title">{{$projet->titre}}</h4>
                 <p class="card-text">{{$projet->description}}</p>

@@ -27,7 +27,7 @@
                     @foreach($dataBlog as $item)
                         <div class="blog-post">
 
-                            <a href="blog-post.html"><img class="img-carousel post-img" src="{{$item->image}}" alt=""></a>
+                            <a href="blog-post.html"><img class="img-carousel post-img" src="{{asset('assets/img/'.$item->image)}}" alt=""></a>
 
                             <div class="post-content">
 

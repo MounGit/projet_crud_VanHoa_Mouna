@@ -17,7 +17,7 @@
                 @foreach ($dataProjets as $data)
                 <div class="col-lg-fifth col-md-3 col-sm-4 col-xs-6" data-groups='["uiux"]'>
                     <a class="portfolio-link" href="#">
-                        <img src="{{$data->image}}" alt="" class="img-carousel">
+                        <img src="{{asset('assets/img/'.$data->image)}}" alt="" class="img-carousel">
                         <div class="portfolio-info">
                             <div class="portfolio-info-top">
                                 <h3>{{$data->titre}}</h3>

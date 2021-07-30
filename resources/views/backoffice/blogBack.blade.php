@@ -12,7 +12,7 @@
         @foreach ($dataBlog as $item)
         <div class="card " style="width: 25rem; margin: 3rem">
             <h3>Article : {{$item->id}}</h3>
-            <img src="/{{$item->image}}" class="card-img-top" style="width: 25rem;" alt="...">
+            <img src="{{asset('assets/img/'.$item->image)}}" class="card-img-top" style="width: 25rem;" alt="...">
             <div class="card-body">
                 <h4 class="card-title"> {{$item->titre}}</h4>
                 <p class="card-text">{{$item->description}}</p>
