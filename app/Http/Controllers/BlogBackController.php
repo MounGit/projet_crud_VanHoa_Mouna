@@ -45,6 +45,6 @@ class BlogBackController extends Controller
         $blog->titre = $request->titre;
         $blog->description = $request->description;
         $blog->save();
-        return redirect()->route('backB');
+        return redirect()->route('showB', $blog->id);
     }
 }

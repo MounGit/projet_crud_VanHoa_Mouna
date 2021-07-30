@@ -41,6 +41,6 @@ class PortfolioBackController extends Controller
         $projet->titre = $request->titre;
         $projet->description = $request->description;
         $projet->save();
-        return redirect()->route('backP');
+        return redirect()->route('show', $projet->id);
     }
 }
