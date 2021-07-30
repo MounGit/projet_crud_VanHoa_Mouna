@@ -58,4 +58,11 @@ Route::post('/blog/{id}/delete',[BlogBackController::class,'destroy'])->name('de
 
 Route::post('/blog/change',[BlogBackController::class,'store']);
 
+Route::get('/blog/{id}/show',[BlogBackController::class,'show'])->name('showB');
+
+Route::put('/blog/{id}/put',[BlogBackController::class,'update'])->name('updateB');
+
+Route::get('/blog/{id}/edit',[BlogBackController::class,'edit'])->name('editB');
+
+
 

@@ -16,6 +16,8 @@
             <div class="card-body">
                 <h4 class="card-title"> {{$item->titre}}</h4>
                 <p class="card-text">{{$item->description}}</p>
+
+                <a href="{{route('showB', $item->id)}}" class="btn btn-warning">SHOW</a>
                 <form action="{{route('deleteBlog', $item->id)}}" method="post">
                     @csrf
                     <button class="btn btn-warning" type="submit">Supprimer</button>

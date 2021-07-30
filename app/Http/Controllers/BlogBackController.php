@@ -28,6 +28,23 @@ class BlogBackController extends Controller
     public function destroy($id){
         $dataDelete=Blog::find($id);
         $dataDelete->delete();
-        return redirect()->back();
+        return redirect()->route('backB');
+    }
+    public function show(Blog $id){
+        $blog=$id;
+        return view('backoffice.showBlog',compact('blog'));
+    }
+
+    public function edit(Blog $id){
+        $blog=$id;
+        return view('backoffice.editBlog',compact('blog'));
+    }
+    public function update(Blog $id, Request $request){
+        $blog = $id;
+        $blog->image = $request->image;
+        $blog->titre = $request->titre;
+        $blog->description = $request->description;
+        $blog->save();
+        return redirect()->route('backB');
     }
 }
